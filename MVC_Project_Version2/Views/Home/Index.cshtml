@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MVC_Project_Version2.Models.displayData_Result>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            DOJ
+        </th>
+        <th>
+            Mobile
+        </th>
+        <th>
+            Email
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Department Name
+        </th>
+        <th>
+            Salary Amount
+        </th>
+        <th>
+            Update Employee
+        </th>
+        <th>
+            Delete Employee
+        </th>
+    </tr>
+        @foreach(var result in Model)
+            {
+<tr>
+    <td>@result.</td>
+    <td>@result.DOJ</td>
+    <td>@result.Mobile</td>
+    <td>@result.Email</td>
+    <td>@result.Address</td>
+    <td>@result.DptName</td>
+    <td>@result.SalaryAmount</td>
+    
+</tr>
+
+            }
+   
+    
+
+</table>
